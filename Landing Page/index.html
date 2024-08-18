@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Fitness World</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <!-- Lista para ícones no modelo web: -->
+            <i class="fa-solid fa-shop" id="nav_logo"> SHOPNESS</i>
+            
+            <ul id="nav_list">
+                <li class="nav_item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#menu">Mostruário</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            
+            <button class="btn-default">
+                Compre aqui
+            </button>
+            
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Lista para ícones no modelo mobile: -->
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav_item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#menu">Mostruário</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Compre aqui
+            </button>
+        </div>
+        <!-- Final da lista para dos ícones do sistema mobile-->
+    </header>
+
+    <main id="content">
+        <!-- Sessão de apresentação do site -->
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    A moda que vai até
+                    <span>você</span>
+                </h1>
+                <p class="description">
+                    Descubra a moda fitness que vai transformar seu treino! Roupas estilosas e confortáveis para você arrasar na academia e na rua. Venha conferir, você merece se sentir incrível a cada movimento!
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#menu" class="btn-default" id="showcase">
+                        Ver Mostruário
+                    </a>
+                    <a href="tel:+5555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (51)999234-3243
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://www.google.com.br/?hl=pt-BR">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img class="image-banner" src="src/images/main.jpg" alt="Banner">
+            </div>
+        </section>
+
+        <!-- Sessão das roupas principais do mostruário -->
+        <section id="menu">
+            <h2 class="section-title">Mostruário</h2>
+            <h3 class="section-subtitle">Mais vendidos</h3>
+             <!-- Sessão das roupas mais vendidas -->
+            <div id="clothes">
+                <div class="cloth">
+                    <div class="cloth-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/images/cloth1.png" id="cloth-img" alt="">
+                    <h3 class="cloth-title">
+                        Cinza Neutro
+                    </h3>
+                    <span class="cloth-description">
+                        Envolva-se no charme sutil do cinza com nossas peças versáteis e sofisticadas.
+                    </span>
+                    <div class="cloth-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>(500+)</span>
+                    <div class="cloth-price">
+                        <h4>R$120,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                  
+                </div>
+                <div class="cloth">
+                    <div class="cloth-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/images/cloth2.jpg" id="cloth-img" alt="">
+                    <h3 class="cloth-title">
+                        Roxo Vibrante
+                    </h3>
+                    <span class="cloth-description">
+                        Transforme seu look com a intensidade e a sofisticação do roxo, a cor que define a moda.
+                    </span>
+                    <div class="cloth-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>(500+)</span>
+                    <div class="cloth-price">
+                        <h4>R$120,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                  
+                </div>
+                <div class="cloth">
+                    <div class="cloth-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/images/cloth3.jpg" id="cloth-img" alt="">
+                    <h3 class="cloth-title">
+                        Azul Sereno
+                    </h3>
+                    <span class="cloth-description">
+                        Explore a serenidade e a elegância do azul com nossas roupas que combinam estilo e conforto. 
+                    </span>
+                    <div class="cloth-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>(500+)</span>
+                    <div class="cloth-price">
+                        <h4>R$120,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                  
+                </div>
+                <div class="cloth">
+                    <div class="cloth-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/images/cloth4.jpg" id="cloth-img"alt="">
+                    <h3 class="cloth-title">
+                        Marrom Terroso
+                    </h3>
+                    <span class="cloth-description">
+                        Abrace o calor e a autenticidade do marrom com peças que trazem um toque de naturalidade ao seu guarda-roupa.
+                    </span>
+                    <div class="cloth-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>(500+)</span>
+                    <div class="cloth-price">
+                        <h4>R$120,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <!-- Fim da sessão das roupas mais vendidas -->
+        </section>
+
+         <!-- Sessão das avaliações dos clientes -->
+        <section id="testimonials">
+            <img src="src/images/dona.png" id="testimonial_ceo" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Laura S.
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Transformador! As roupas dessa loja não só me fazem sentir incrível durante o treino, como também me dão confiança para encarar qualquer desafio. A qualidade e o estilo são imbatíveis. Não consigo imaginar minha rotina de exercícios sem essas peças!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="src/images/avatar2.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Romana B.
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Melhor escolha para treinos e estilo! Encontrei a combinação perfeita de conforto e moda aqui. As roupas são super duráveis e seguem com você em todos os movimentos. Além disso, adoro como os designs são modernos e versáteis. Recomendo para todos que querem arrasar na academia e fora dela!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="btn-default" id="reviews">
+                        Ver mais avaliações
+                    </button>
+                </div>
+            </div>
+        </section>
+
+         <!-- Sessão do rodapé -->
+          <footer>
+            <img src="src/images/wave.svg" alt="">
+
+            <div id="footer_items">
+                <span id="copyright">
+                    &copy 2024 Isabella Souza
+                </span>
+                <div class="social-media-buttons">
+                    <a href="https://www.google.com.br/?hl=pt-BR">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+          </footer>
+    </main>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
